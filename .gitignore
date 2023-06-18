@@ -1,0 +1,6 @@
+# Exclude ide folders
+.idea/
+.vscode/
+
+# Exclude some macOS files
+.DS_Store
