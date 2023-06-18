@@ -12,7 +12,7 @@ type KanelDB struct {
 	opt    *internal.Options
 }
 
-// NewClient returns a client to turnip database
+// NewClient returns a client to kanelDB database
 func NewClient() *KanelDB {
 	return &KanelDB{
 		client: &internal.KanelDBInstance{
