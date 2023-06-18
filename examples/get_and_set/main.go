@@ -27,4 +27,6 @@ func main() {
 	}
 
 	fmt.Printf("%s", result)
+
+	// Output: hello_world
 }
