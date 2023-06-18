@@ -1,4 +1,4 @@
-package turnip
+package internal
 
 import (
 	"errors"

@@ -1,19 +1,19 @@
-package turnip
+package internal
 
 import "time"
 
-type turnipClient struct {
+type KanelDBInstance struct {
 	opt  *Options
-	exec CmdAble[any]
+	Exec CmdAble[any]
 }
 
-func (c *turnipClient) clone() *turnipClient {
+func (c *KanelDBInstance) clone() *KanelDBInstance {
 	clone := *c
 	return &clone
 }
 
 // WithTimeout used to set a timeout for request
-func (c *turnipClient) WithTimeout(timeout time.Duration) *turnipClient {
+func (c *KanelDBInstance) WithTimeout(timeout time.Duration) *KanelDBInstance {
 	opt := c.opt.clone()
 	opt.ReadTimeout = timeout
 	opt.WriteTimeout = timeout
